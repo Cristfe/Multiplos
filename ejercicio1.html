@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - 10 primeros multiplos y suma</title>
+</head>
+
+<body>
+
+    <script>
+        salida = " ";
+        var multiplo, numero, suma = 0;
+        numero = parseInt(prompt("Introduzca un número: ", ""));
+
+        document.write("Los 10 primeros multiplos de " + numero + " son: " + multiplo + "");
+        for (i = 1; i <= 10; i++) {
+            multiplo = numero * i;
+            salida = salida + multiplo + " ";
+            suma = suma + multiplo;
+        }
+        alert(salida + "\nSuma= " + suma);
+    </script>
+
+</body>
+
+</html>
